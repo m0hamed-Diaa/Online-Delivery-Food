@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check Out Page</title>
+    <link rel="icon" href="./css/img/burger-food-image-generated-by-ai_669954-369.avif">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Swiper.js Library -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script>
+        (function() {
+            let darkPref = localStorage.getItem("dark");
+
+            // منع تأثير إعدادات الجهاز
+            document.documentElement.style.colorScheme = "light dark";
+
+            if (darkPref === "done") {
+                document.documentElement.classList.add("dark");
+            } else {
+                document.documentElement.classList.remove("dark");
+            }
+        })();
+    </script>
+</head>
+<body>
+    <div id="darkmode">
+        <i class="fa-solid fa-moon"></i>
+    </div>
+    <!-- End Darkmode -->
+    <!-- Start Scroll To Top -->
+    <a id="Scroll_To_Top" href="#">
+        <i class="fa-solid fa-arrow-up"></i>
+    </a>
+    <!-- End Scroll To Top -->
+    <!-- Start Header -->
+    <header>
+        <div class="container">
+            <div class="logo">Mohamed <br><span>Online Delivery.</span></div>
+            <div class="menu_links_icons">
+                <i class="fa-solid fa-bars menu_list"></i>
+            </div>
+            <ul class="links">
+                <li class="active">
+                    <a href="#home">Home</a>
+                </li>
+                <li>
+                    <a href="#menu">Menu</a>
+                </li>
+                <li>
+                    <a href="#service">Service</a>
+                </li>
+                <li>
+                    <a href="#aboutus">About us</a>
+                </li>
+                <li>
+                    <a href="#contact">Contact</a>
+                </li>
+            </ul>
+            <div class="info">
+                <a href="#" class="cart_info_header">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span class="cart_info_count_header">0</span>
+                </a>
+                <a href="signin.html" target="_blank" class="Sign_in">Sign in <i><i class="fa-solid fa-right-to-bracket"></i></i></a>
+            </div>
+        </div>
+    </header>
+    <!-- End Header -->
+    <!-- Start Cart Tab In Checkout -->
+    <div id="cart_tab_checkout">
+        <div class="container">
+            <form id="formDataSend" action="https://script.google.com/macros/s/AKfycbxjYceXn7qXWrtBByQ3CPYjzjk6Ehw5TJdRPyVdn964CpiGu_Tg84QHqcTIClJmbbupBA/exec" method="post">
+                <input type="hidden" name="Product_Details">
+                <input type="hidden" name="Product_Count">
+                <input type="hidden" name="Product_Price">
+
+                <div class="allProducts_in_checkout">
+                    <h3>Excess requests: <span class="count_items_in_cart">0</span></h3>
+                    <div class="details" id="All_Items_In_checkout">
+                        
+                    </div>    
+                    <div class="bottom_cart">
+                        <p>Total: <span class="sum_of_quaintity_checkout"><span>$0</span></span></p>
+                        <p class="Delivery_price">Delivery Price: <span>$20</span></p>
+                        <p>All Costs: <span class="AllCost_in_checkout">$20</span></p>
+                        <input type="submit" value="Place Older">
+                    </div>
+                </div>
+                <div class="form_input">
+                    <div class="box">
+                        <label for="name">Name <span>*</span></label>
+                        <input type="text" id="name" name="User_Name" placeholder="Enter Your Name" required autocomplete="off">
+                    </div>
+                    <div class="box">
+                        <label for="email">Email <span>*</span></label>
+                        <input type="email" id="email" name="User_Email" placeholder="Enter Your Email" required autocomplete="off">
+                    </div>
+                    <div class="box">
+                        <label for="location">Your Location <span>*</span></label>
+                        <input type="text" id="location" name="User_Location" placeholder="Enter Your Location" required autocomplete="off">
+                    </div>
+                    <div class="box">
+                        <label for="phone">Your Phone <span>*</span></label>
+                        <input type="number" id="phone" name="User_Phone" placeholder="Enter Your Phone" required autocomplete="off">
+                    </div>
+                    <div class="box">
+                        <label for="password">Your Password <span>*</span></label>
+                        <input type="password" id="password" name="User_Password" placeholder="Enter Your Password" required autocomplete="off">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- End Cart Tab In Checkout -->
+    <!-- Start Footer  -->
+    <footer>
+        <div class="container">
+            <div class="box">
+                <div class="logo">Mohamed <br><span>Online Delivery.</span></div>
+                <p>We Will Your Tummy With Delicious Food With Fast Of Delivery.</p>
+                <div class="social_icons">
+                    <a href="#">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="box">
+                <h2 data-foot="Menu">Menu</h2>
+                <div>
+                    <a href="#">Special</a>
+                    <a href="#">Popular</a>
+                    <a href="#">Categories</a>
+                </div>
+            </div>
+            <div class="box">
+                <h2 data-foot="Company">Company</h2>
+                <div>
+                    <a href="#">Why Us</a>
+                    <a href="#">Partner</a>
+                    <a href="#">About Us</a>
+                    <a href="#">FAQ's</a>
+                </div>
+            </div>
+            <div class="box">
+                <h2 data-foot="Support">Support</h2>
+                <div>
+                    <a href="#">Account</a>
+                    <a href="#">Aupport Center</a>
+                    <a href="#">Feeback</a>
+                    <a href="#">Contacts</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Start Footer  -->
+    <script src="./js/script.js"></script>
+    <script src="./js/submitData.js"></script>
+</body>
