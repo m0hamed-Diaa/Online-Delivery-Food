@@ -402,6 +402,17 @@ section .image img{
 }
 .our_services .boxs .box img {
     margin-bottom: 10px;
+    width: 80px;
+    animation: our_services 2s infinite ease;
+}
+@keyframes our_services {
+    0%,
+    100% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(15px) rotate(10deg);
+    }
 }
 .our_services .boxs .box h2 {
     margin-bottom: 5px;
