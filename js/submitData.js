@@ -42,5 +42,4 @@ form.addEventListener("submit", (e) => {
         showMessage("❌ حدث خطأ أثناء الإرسال", "unsuccess");
     });
 });
-
 // https://docs.google.com/spreadsheets/d/1ZFEXavEnW-SNtZZSQJHLSA6MrDMd8ffMwWBN3p88L8U/edit?gid=0#gid=0

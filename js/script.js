@@ -230,4 +230,3 @@ document.addEventListener("DOMContentLoaded", () => {
     updateCart();
 });
 
-// End allProducts Json
