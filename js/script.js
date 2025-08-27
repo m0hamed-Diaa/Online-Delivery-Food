@@ -124,7 +124,9 @@ function updateCart () {
         const itemHTML = `
             <div class="box">
                 <div class="cart_info">
-                    <img src="${product.img}" alt="">
+                    <div class="images">
+                        <img src="${product.img}" loading="lazy" alt="${product.name.split(" ").slice(0, 1).join("")}">
+                    </div>
                     <div class="info">
                         <h4 class="order_name">${product.name}</h4>
                         <p class="order_price">$${allPrice}</p>

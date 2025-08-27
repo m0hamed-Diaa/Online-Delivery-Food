@@ -881,9 +881,20 @@ footer .container .box:not(:nth-child(1)) div a:hover {
     gap: 10px;
     align-items: center;
 }
-#cart_tab #All_Items_In_Cart .box .cart_info img {
+#cart_tab #All_Items_In_Cart .box .cart_info .images {
     width: 80px;
+    height: 80px;
     object-fit: cover;
+    background-color: var(--bg-color);
+    border-radius: 50%;
+    border: 1px solid #ff6f00;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#cart_tab #All_Items_In_Cart .box .cart_info .images img {
+    object-fit: cover;
+    width: 80px;
 }
 #cart_tab #All_Items_In_Cart .box .cart_info .info h4 {
     margin-bottom: 5px;
@@ -1104,7 +1115,18 @@ footer .container .box:not(:nth-child(1)) div a:hover {
     gap: 10px;
     align-items: center;
 }
-#cart_tab_checkout #formDataSend .box .cart_info img {
+#cart_tab_checkout #formDataSend .box .cart_info .images {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    background-color: var(--bg-color);
+    border-radius: 50%;
+    border: 1px solid #ff6f00;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#cart_tab_checkout #formDataSend .box .cart_info .images img {
     width: 80px;
     object-fit: cover;
 }
@@ -1170,6 +1192,11 @@ footer .container .box:not(:nth-child(1)) div a:hover {
 }
 #cart_tab_checkout #formDataSend .allProducts_in_checkout h3 span {
     color: red;
+    font-size: 16px;
+    background-color: #ffd500;
+    padding: 5px;
+    border-radius: 50%;
+    margin-left: 10px;
 }
 #cart_tab_checkout #formDataSend .bottom_cart {
     color: var(--text-color);
