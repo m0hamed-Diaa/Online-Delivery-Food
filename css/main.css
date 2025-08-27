@@ -484,11 +484,21 @@ section .image img{
     box-shadow: 0 12px 25px var(--border-color);
     background-color: var(--bg-color);
 }
+#menu .slide_product .products .box .images {
+    width: 150px;
+    height: 150px;
+    background-color: #ccc;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 1px solid #ff6f00;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px auto;
+}
 #menu .slide_product .products .box img {
-    width: 140px;
-    max-width: 100%;
+    width: 130px;
     transition: transform var(--transition-duration) linear;
-    border-radius: 10px;
     filter: drop-shadow(
         var(--border-color) 0 10px 10px
     );
